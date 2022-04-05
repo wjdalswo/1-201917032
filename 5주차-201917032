@@ -52,60 +52,36 @@ while n <= a**2:
 3 7 11 15
 4 8 12 16
 '''
+'''
 a=int(input('숫자를 입력:'));
 n=1
 
-while n<a**2:
-         print(f'{n:3}',end='')
-         n+=a
-         while n<a**2:
-                  print(f'{n:3}',end='')
-         
-         n+=a
-         
-
- 
-                  
-         
 
 
-
+while n<=a**2:
+    print(f'{n:3}',end='',)
+    n+=a
+    
+     
         
+'''         
 
+a=int(input('숫자를 입력:'));
+n=0
+b=1
+
+while b<=a:
+    while n<a:
+        print(b+a*n,end='')
+        n+=1
+    print()
+    b+=1
+    n=0
          
 
-         
-         
-           
-           
-            
-         
-         
-          
-          
-           
-          
-          
-          
-          
-          
-          
-         
-           
+
                    
-                    
-                   
-             
-             
-  
-
-
          
-
-
-
-
+        
 '''
-'''
-'''
-'''
+
