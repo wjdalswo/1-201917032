@@ -1,0 +1,111 @@
+'''
+전체 : hello
+일부 : x가 가리키는 정보
+'''
+'''
+import time
+
+
+
+for x in "hello":
+         #print(x)
+         #타임모듈의 sleep()기능 실행
+         time.sleep(1)
+         print('단지 반복에 사용')
+
+
+#문제
+
+자신의 영문이름을 입력받아
+아래와 같이 출력되도록 프로그램 해봅시다.
+입력: honggildong
+출력: h-o-n-g-g-i-l-d-o-n-g
+'''
+'''
+name=input('이름 입력:')
+for x in name[0:-1]:
+         print(x+'-',end='')
+         
+print(name[-1])         
+
+'''
+'''
+import time
+
+'''
+'''
+전체: 리스트
+'''
+'''
+
+for a in [1,2,3,4,5,6]:
+         print(a)
+         time.sleep(1)
+'''         
+#문제
+'''
+리스트안에 들어있는 자연수 중에서
+홀수 갯수와 짝수 갯수를 출력하는
+프로그램을 완성해 봅시다.
+(짝수란 2로 나누었을떄 나머지가 0이 되는 수를 말합니다.)
+'''
+'''
+b=0
+c=0
+for a in [1,2,3,4,5,6]:
+         print(a)
+
+         if a%2==0:
+                  print(b+1)
+         elif a%2>0:
+                  print(c+1)
+
+'''
+'''
+for x in range(0,10,-1):
+         print(x)
+#범위를 리스트로 바꾸기
+
+a=list (range(0,10))
+
+for x in a:
+         print(x)
+
+print('a의 리스트 인덱스 3번요소:',a[3])         
+     
+
+'''
+'''
+# 구구단
+import time
+
+for outN in range(4):
+         for inN in range(6):
+                  print(f'{outN} x {inN}={outN * inN}' )
+                  time.sleep(1)
+  '''
+'''
+1.구구단의 결과가 출력되도록 위 코드를 수정해보자
+(3x4=12)
+2아래와 같이 출력되는 구구단 프로그램 해보자
+
+1x1=1 / 2x1=2 /3x1=3/
+1x2=2 / 2x2=4 /3x2=6/  
+1x3=3 / 2x3=6 /3x3=9/
+1x4=4 / 2x4=8 /3x4=12/
+'''
+import time
+
+for outN in range(1):
+         for inN in range(5):
+                  print(f'{outN} x {inN}={outN * inN}/ ')             
+              
+         
+
+
+         
+         
+      
+
+
+
