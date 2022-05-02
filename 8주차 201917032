@@ -1,0 +1,48 @@
+'''
+a=49
+b=3
+c=0
+while a>=b:
+         c+=1
+         a=a-b # apple is 46
+         
+print(f'남은 사과는{a}이고 꺼낸횟수는{c}')
+'''
+ 
+BOARD=[[1,2,5],
+       [3,0,6],
+       [8,7,4]]
+#화면의 보드 상태 보여주기
+print(BOARD[0])
+print(BOARD[1])
+print(BOARD[2])
+r=1
+c=1
+key=input('wasd중에 하나를 입력:')
+
+# 만약 key 값이 문자d와 같다면
+ #BOARD[2][2]와BOARD[2][1]를 서로 바꾸기
+if key=='a':
+         BOARD[r][c-1],BOARD[r][c]=BOARD[r][c],BOARD[c][c-1]
+         r=r
+         c=c-1
+elif key=='d':
+         BOARD[r][c+1],BOARD[r][c]=BOARD[r][c],BOARD[c][c+1]
+         r=r
+         c=c+1
+elif key=='w':
+         BOARD[r-1][c],BOARD[r][c]=BOARD[r][c],BOARD[r-1][r]
+         r=r-1
+         c=c
+elif key=='s':
+         BOARD[r+1][c],BOARD[r][c]=BOARD[r][c],BOARD[r+1][r]
+         r=r+1
+         c=c
+
+print(BOARD[0])
+print(BOARD[1])
+print(BOARD[2])
+         
+         
+         
+ 
