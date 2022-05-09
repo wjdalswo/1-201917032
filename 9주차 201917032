@@ -45,7 +45,7 @@ random.shuffle(a)#a리스트 섞기
 
 a=a[0:3]#인덱스 0,1,2,번만 a리스트로 하기
 s,b,o=0,0,0
-n1,n2,n3= input ('숫자3개를 입력(띄어쓰기구분)').split('')
+n1,n2,n3= input ('숫자3개를 입력(띄어쓰기구분)').split(' ')
 n1=int(n1)
 n2=int(n2)
 n3=int(n3)
@@ -69,5 +69,5 @@ if n3 in a:
                            b+=1                             
 else:
          o+=1
-
+print(f'스트라이크{s},볼{b},아웃{o}')
 
