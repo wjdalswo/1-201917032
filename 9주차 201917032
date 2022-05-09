@@ -64,7 +64,9 @@ if n2 in a:
 if n3 in a:
          if n3==a[3]:
                   s+=1
-         elif n3==a[0]and a[2] :
+         elif n3==a[0]and a[1] :
                            b+=1                             
 else:
          o+=1
+
+
