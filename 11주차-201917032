@@ -1,0 +1,40 @@
+'''
+import random
+w=0
+l=0
+d=0
+n=0
+
+while w<4 and l<4:
+         c=random.choice(['가위','바위','보'])
+         m=input('가위,바위,보:')
+         if c=='가위':
+                   if m=='가위':
+                            d+=1
+                   if m=='바위':
+                            w+=1
+                   if m=='보':
+                            l+=1
+         elif c=='바위':
+                   if m=='가위':
+                            l+=1
+                   if m=='바위':
+                            d+=1
+                   if m=='보':
+                            w+=1
+         elif c=='보':
+                   if m=='가위':
+                            w+=1
+                   if m=='바위':
+                            l+=1
+                   if m=='보':
+                            d+=1
+         n+=1
+         print(f'{n}전{w}승{l}패{d}무')
+if w<l:
+         print('컴터 승')
+else:
+         print('사람승')
+'''
+
+
