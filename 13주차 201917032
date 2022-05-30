@@ -1,0 +1,32 @@
+'''
+a=int(input('숫자를 입력:'))
+
+for x in range(1,a+1):
+         if a%x==0:
+                  
+'''
+'''
+
+def 크기가1인_사각형을_가로출력(n):
+         for i in range(n):
+                  #사각형 출력하기
+                  print('@',end='')
+         #다음줄로  커서이동
+         print()        
+
+
+def 넓이에맞는사각형출력(a,b):
+         #반복
+         for i in range(a):
+                  크기가1인_사각형을_가로출력(b)        
+         print();print();print() 
+
+
+r=int(input('넓이를 입력:'))
+
+for i in range(1,r+1):
+         if r%i==0 and i*i<=r: #약수 찾기
+                  넓이에맞는사각형출력(i,r//i)
+'''
+
+         
